@@ -17,6 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <nexus.host.url>http://192.168.242.137:8081</nexus.host.url>
   </properties>
 
   <dependencies>
