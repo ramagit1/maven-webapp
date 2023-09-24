@@ -28,7 +28,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  <distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus Release Repository</name>
+			<url>${nexus.host.url}/repository/maven-hosted-release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>${nexus.host.url}/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
   <build>
     <finalName>demo</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
